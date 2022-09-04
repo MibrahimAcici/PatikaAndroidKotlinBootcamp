@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="50dp"
+    android:background="@drawable/ic_pink_bg">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/sign_up_fab"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#D9D9D9"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        app:tint="#8E8E8E"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    <TextView
+        android:id="@+id/sign_up_tv_create"
+        android:layout_width="241dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/inter_bold"
+        android:text=" Create \n Account :)"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.182"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/sign_up_et_mail"
+        android:layout_width="349dp"
+        android:layout_height="80dp"
+        android:paddingBottom="40dp"
+        android:textColorHint="#6B6B6B"
+        android:maxLines="1"
+        android:ems="10"
+        android:hint="Enter Email Id"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sign_up_tv_create"/>
+
+    <EditText
+        android:id="@+id/sign_up_et_username"
+        android:layout_width="349dp"
+        android:layout_height="80dp"
+        android:paddingBottom="40dp"
+        android:maxLines="1"
+        android:ems="10"
+        android:textColorHint="#6B6B6B"
+        android:hint="Create Username"
+        android:inputType="textPersonName"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@id/sign_up_et_mail"
+        app:layout_constraintEnd_toEndOf="@+id/sign_up_et_mail"
+        app:layout_constraintStart_toStartOf="@+id/sign_up_et_mail" />
+
+    <EditText
+        android:id="@+id/sign_up_et_password"
+        android:layout_width="349dp"
+        android:layout_height="80dp"
+        android:paddingBottom="40dp"
+        android:maxLines="1"
+        android:layout_marginBottom="52dp"
+        android:ems="10"
+        android:textColorHint="#6B6B6B"
+        android:hint="Create Password"
+        android:inputType="textPassword"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@id/sign_up_et_username"
+        app:layout_constraintEnd_toEndOf="@+id/sign_up_et_username"
+        app:layout_constraintStart_toStartOf="@+id/sign_up_et_username" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/sign_up_btn_signup"
+        android:layout_width="229dp"
+        android:layout_height="60dp"
+        app:cornerRadius="25dp"
+        android:backgroundTint="@color/black"
+        android:layout_marginBottom="56dp"
+        android:text="Sign Up"
+        android:fontFamily="@font/inder_regular"
+        android:textSize="28sp"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

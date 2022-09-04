@@ -3,7 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/ibrah/AndroidStudioProjects/mibrahimacici/week2/app/src/main/res/layout/activity_main.xml" value="0.29438405797101447" />
+        <entry key="..\:/Users/ibrah/AndroidStudioProjects/mibrahimacici/Week2/app/src/main/res/drawable-v24/ic_blue_bg.xml" value="0.1" />
+        <entry key="..\:/Users/ibrah/AndroidStudioProjects/mibrahimacici/Week2/app/src/main/res/drawable/ic_back.xml" value="0.1" />
+        <entry key="..\:/Users/ibrah/AndroidStudioProjects/mibrahimacici/Week2/app/src/main/res/drawable/ic_backk.xml" value="0.1" />
+        <entry key="..\:/Users/ibrah/AndroidStudioProjects/mibrahimacici/Week2/app/src/main/res/drawable/ic_backkk.xml" value="0.197" />
+        <entry key="..\:/Users/ibrah/AndroidStudioProjects/mibrahimacici/Week2/app/src/main/res/drawable/ic_vector_1.xml" value="0.1" />
+        <entry key="..\:/Users/ibrah/AndroidStudioProjects/mibrahimacici/Week2/app/src/main/res/layout/activity_login.xml" value="0.2" />
+        <entry key="..\:/Users/ibrah/AndroidStudioProjects/mibrahimacici/Week2/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/ibrah/AndroidStudioProjects/mibrahimacici/Week2/app/src/main/res/layout/activity_sign_up.xml" value="0.2" />
+        <entry key="..\:/Users/ibrah/AndroidStudioProjects/mibrahimacici/Week2/app/src/main/res/layout/activity_start.xml" value="0.33" />
       </map>
     </option>
   </component>

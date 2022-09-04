@@ -1,4 +1,4 @@
-package com.ibrahim.proje2
+package com.ibrahim.week2
 
 import org.junit.Test
 
