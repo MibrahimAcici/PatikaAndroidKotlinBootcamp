@@ -14,6 +14,11 @@ class SignUpActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         val intent = Intent(this@SignUpActivity,LoginActivity::class.java)
+
+        /*
+        Mail,username ve password girilmişse login sayfasına geçiş
+        Herhangi biri girilmemişse Toast mesaj ile Lütfen boş bırakmayınız.. yazısı
+        */
         binding.signUpBtnSignup.setOnClickListener {
             if(binding.signUpEtMail.text.toString().isEmpty() || binding.signUpEtUsername.text.toString().isEmpty() || binding.signUpEtPassword.text.toString().isEmpty()){
                 Toast.makeText(applicationContext,"Lütfen boş bırakmayınız..", Toast.LENGTH_SHORT).show()
@@ -21,6 +26,8 @@ class SignUpActivity : AppCompatActivity() {
                 startActivity(intent)
             }
         }
+
+        //Float Action Button ile LoginActivity sayfasına geçiş
         binding.signUpFab.setOnClickListener {
             startActivity(intent)
         }

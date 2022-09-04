@@ -13,6 +13,7 @@ class StartActivity : AppCompatActivity() {
         binding = ActivityStartBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        //JoinNow butonu ile signUp sayfasına geçiş
         val intent = Intent(this@StartActivity, SignUpActivity::class.java)
         binding.startBtnJoin.setOnClickListener {
             startActivity(intent)
