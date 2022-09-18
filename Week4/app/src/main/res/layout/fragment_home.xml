@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.HomeFragment"
+    android:background="@drawable/background_shape">
+
+    <TextView
+        android:id="@+id/home_textview_lets"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Let's Explore the"
+        android:textAlignment="textStart"
+        android:fontFamily="@font/open_sans"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textSize="45sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </TextView>
+
+    <TextView
+        android:id="@+id/home_textview_solar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Solar System"
+        android:textAlignment="textStart"
+        android:fontFamily="@font/open_sans"
+        android:textColor="@color/yellow"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/home_textview_lets">
+    </TextView>
+
+    <TextView
+        android:id="@+id/home_textview_with"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="with"
+        android:textAlignment="textStart"
+        android:fontFamily="@font/open_sans"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="45sp"
+        app:layout_constraintStart_toStartOf="@id/home_textview_solar"
+        app:layout_constraintTop_toBottomOf="@id/home_textview_solar">
+    </TextView>
+
+    <TextView
+        android:id="@+id/home_textview_explorer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Explorer"
+        android:textAlignment="textStart"
+        android:fontFamily="@font/open_sans"
+        android:textColor="@color/yellow"
+        android:textStyle="bold"
+        android:layout_marginStart="10dp"
+        android:textSize="45sp"
+        app:layout_constraintStart_toEndOf="@id/home_textview_with"
+        app:layout_constraintTop_toBottomOf="@id/home_textview_solar">
+    </TextView>
+
+    <ImageView
+        android:id="@+id/home_imageview_astronomer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/astronomer"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/home_textview_with">
+    </ImageView>
+
+    <RelativeLayout
+        android:id="@+id/home_relative_button_letsgo"
+        android:layout_width="345dp"
+        android:layout_height="50dp"
+        android:background="@drawable/rect"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/home_imageview_astronomer">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/open_sans"
+            android:text="Let's Go"
+            android:paddingEnd="40dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="21sp"
+            tools:ignore="RtlSymmetry">
+        </TextView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingStart="80dp"
+            android:src="@drawable/rocket"
+            tools:ignore="RtlSymmetry" />
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

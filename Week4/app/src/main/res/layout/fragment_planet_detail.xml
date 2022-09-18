@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_shape"
+    tools:context=".fragments.PlanetDetailFragment">
+
+    <ImageButton
+        android:id="@+id/planet_detail_toolbar_back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/toolbar_back"
+        android:backgroundTint="@color/yellow"
+        android:translationZ="90dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </ImageButton>
+
+    <ImageView
+        android:id="@+id/planet_detail_imageview"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:background="@drawable/planet_detail_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </ImageView>
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/planet_detail_divider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/planet_detail_imageview">
+    </com.google.android.material.divider.MaterialDivider>
+
+    <Button
+        android:id="@+id/planet_detail_button_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rect"
+        android:text="PRICE"
+        android:fontFamily="@font/open_sans"
+        android:textColor="@color/green"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_margin="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+    </Button>
+
+    <Button
+        android:id="@+id/planet_detail_button_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rect"
+        android:text="ID"
+        android:fontFamily="@font/open_sans"
+        android:textColor="@color/yellow"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_margin="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/planet_detail_divider">
+    </Button>
+
+    <Button
+        android:id="@+id/planet_detail_button_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rect"
+        android:text="TYPE"
+        android:fontFamily="@font/open_sans"
+        android:textColor="@color/yellow"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_margin="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/planet_detail_button_id"
+        app:layout_constraintBottom_toBottomOf="@id/planet_detail_button_price">
+    </Button>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
