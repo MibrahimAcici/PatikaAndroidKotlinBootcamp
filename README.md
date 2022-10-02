@@ -18,5 +18,8 @@ Mars Real Estate App;
 Retrofit
 RecyclerView
 
+Week 5 --
+Group Work
+
 Week 6 --
 Coroutine Scope
